@@ -1,0 +1,214 @@
+:root{
+    --primary-color: #0A1128;
+    --white: #FFFFFF;
+    --gap: 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 110%;
+
+}
+body{
+    font-family: monospace;
+    
+}
+.main-bg{
+    font-family: monospace;
+    background-image: url('../img/fundo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    margin-top: 2.3rem;
+    color: white;
+}
+#intro > .main-content{
+    padding-top: 6rem;
+}
+
+.main-content{
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+.section{
+    min-height: 50vh;
+}
+.white-bg{
+    background-color: white;
+    color:#0A1128;
+    
+}
+.intro-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+.intro-text-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center
+}
+.intro-text-content h2{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.intro .intro-img img{
+    vertical-align: center;
+    max-width: 100%;
+}
+.top3-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column;
+    margin-top: 2rem;
+    height: 50vh;
+}
+.grid-one-content{
+    height: 75vh;
+    padding-top: 3rem;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+    z-index: 0;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    
+}
+.grid-one-content > h3{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.grid h4{
+    font-size: 0.8rem;
+    position: relative;
+    padding-top: 1.7rem;
+    padding-right: 15rem;
+    padding-bottom: 2rem;
+}
+.grid h4::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 3rem;
+    font-style: italic;
+    top: 0;
+    left: 0;
+    transform: rotate(2deg);
+}
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    
+}
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(1deg);
+}
+.pricing{
+    margin-top: 22rem;
+    height: 100vh;
+}
+
+.responsive-table{
+    overflow-y: auto;
+    margin-top: -8rem;
+}
+
+table{
+    width: 60%;
+    border-collapse: collapse;
+    background-color: white;
+    color: #0A1128;
+    margin-left:auto; 
+    margin-right:auto;
+}
+table caption{
+    font-size: italic;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+table td, table th{
+    padding: .5rem;
+    border: 0.1rem solid gray;
+    text-align: center;
+}
+tfoot td, table th{
+    background-color:darkgrey;
+}
+.intro-content
+.intro.main-bg.section.contact-form{
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.contact-form2{
+    background-image: url('../img/fundo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    height: 40rem;
+}
+.contact-form2 legend{
+   text-align: center;
+}
+.contact-form2 .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: center;
+}
+.form-group{
+    flex-wrap: 1 1 30%;
+    width: 60%;
+}
+.form-group label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.form-group input, .form-group textarea{
+     background: white;
+     width: 90%;
+     box-shadow: none;
+     font-size: 1rem;
+     border-radius: .2rem;
+     text-decoration: none;
+}
+.form-group button{
+    cursor: pointer;
+    font-size: 1rem;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    box-shadow: 0 0 5px 5px darkblue;
+}
+.footer{
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    background-color: black;
+}
+.footer span{
+    color: red;
+}
+
+
+
+

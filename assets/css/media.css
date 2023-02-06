@@ -1,0 +1,112 @@
+.close-menu{
+  display: none;
+}
+@media(max-width:880px){
+    .section{
+        min-height: 130vh;
+    }
+    .intro-content{
+        grid-template-columns: 1fr;
+    }
+    .grid-one .grid-one-content .grid{
+        grid-template-columns: 1fr;
+        padding-left: -6rem;
+        padding-top: -3rem;
+        
+    }
+    .grid-one-content > .grid > article{
+        margin-top: -3rem;
+        font-size: medium;
+        width: 100%;
+        padding-bottom: -2rem;
+    }
+    .grid-one.white-bg.section{
+        height: 100rem;
+        width: 100%;
+    }
+    .grid-one.white-bg.section > .grid-one-content > .grid > .gallery-img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .grid-one.main-bg.section{
+        height: 45rem;
+    }
+    .menu.white-bg .main-content.menu-content nav ul li a{
+        font-size: 1.1rem;
+        font-weight: bolder;
+        color:snow;
+    }
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menu-content {
+        height: 100vh;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 0.2rem;
+        right: 0.7rem;
+        background: black;
+        color: white;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        padding: 0.05rem;
+        cursor: pointer;
+        
+    }
+    .close-menu:checked~.main-bg .menu.white-bg{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        background-color: aqua;   
+        
+    } 
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+        position: fixed;
+        z-index: 2;
+    }
+    .menu-spacing {
+        display: none;
+    }
+    .intro.main-bg.section{
+      margin-top: 1.2rem;
+      
+    }
+    .main-content.top3-content{
+        width: 100vh;
+    }
+    .main-content.top3-content{
+        max-width: 50vh;
+        display: flex;
+        flex-flow: column ;
+        margin-top: 2rem;
+        height: 50vh;
+    }
+    .main-bg{
+        height: auto;
+    }
+    .main-content.top3-content > .responsive-table{
+        height: 150vh;
+        padding-top: 6rem;
+    }
+    
+    
+    
+}
